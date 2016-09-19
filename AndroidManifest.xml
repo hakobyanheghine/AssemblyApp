@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.assembly.app"
+    android:versionCode="7"
+    android:versionName="1.0.7" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="com.assembly.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.assembly.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:debuggable="false"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_action_logo"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.assembly.app.SearchActivity" />
+
+        <activity
+            android:name="com.assembly.app.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.assembly.app.ConnectionsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.assembly.app.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.assembly.app.SearchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.assembly.app.HomeActivity"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.assembly.app.MessagesActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.assembly.app.HomeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.assembly.app.NewProfileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.assembly.app.GroupActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.assembly.app.HomeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.assembly.app.ConversationsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.assembly.app.HomeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.assembly.app.SettingsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.assembly.app.HomeActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.assembly.app.TutorialActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.assembly.app.HomeActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.assembly.app.RegistrationActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.assembly.app.HomeActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+
+        <receiver
+            android:name="com.assembly.app.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.assembly.app" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.assembly.app.gcm.GcmIntentService" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="a165f568c481d277b320fbb03e0e759da5a2e9f3"/>
+    </application>
+
+</manifest>

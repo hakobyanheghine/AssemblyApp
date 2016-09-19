@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.assembly.app.MainActivity" >
+
+    <item
+        android:id="@+id/action_messages"
+        android:actionLayout="@layout/action_bar_messages"
+        android:icon="@drawable/ic_message"
+        android:title="@string/action_messages"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search_2"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/action_search"/>
+
+</menu>

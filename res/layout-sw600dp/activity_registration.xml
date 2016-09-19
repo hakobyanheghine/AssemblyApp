@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container_background_big"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/registration_user_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginRight="15dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/no_img" />
+
+            <LinearLayout
+                android:id="@+id/registration_user_data_container"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_toRightOf="@id/registration_user_img"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/registration_user_name_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="@string/connection_name_example"
+                    android:textColor="@color/grey_3"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/registration_user_position_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="@string/connection_position_example"
+                    android:textColor="@color/grey_3"
+                    android:textSize="19sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/registration_user_location_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/connection_company_example"
+                    android:textColor="@color/grey_4"
+                    android:textSize="19sp"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Experience -->
+
+        <TextView
+            android:id="@+id/registration_experience_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/experience"
+            android:textColor="@color/grey_3"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/registration_experience_description_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/experience_description"
+            android:textColor="@color/grey_3"
+            android:textSize="21sp"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/registration_experience_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container_background_big"
+            android:hint="@string/experience_hashtags_example"
+            android:imeOptions="actionDone"
+            android:inputType="text|textMultiLine"
+            android:maxLines="10"
+            android:padding="5dp"
+            android:scrollHorizontally="false"
+            android:textSize="21sp" />
+
+        <!-- Education -->
+
+        <TextView
+            android:id="@+id/registration_education_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/education"
+            android:textColor="@color/grey_3"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/registration_education_description_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/education_description"
+            android:textColor="@color/grey_3"
+            android:textSize="21sp"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/registration_education_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container_background_big"
+            android:hint="@string/education_hashtags_example"
+            android:imeOptions="actionDone"
+            android:inputType="text|textMultiLine"
+            android:maxLines="10"
+            android:padding="5dp"
+            android:scrollHorizontally="false"
+            android:textSize="21sp" />
+
+        <!-- Interests -->
+
+        <TextView
+            android:id="@+id/registration_interests_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/interests"
+            android:textColor="@color/grey_3"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/registration_interests_description_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/interests_description"
+            android:textColor="@color/grey_3"
+            android:textSize="21sp"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/registration_interests_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/container_background_big"
+            android:hint="@string/interest_hashtags_example"
+            android:imeOptions="actionDone"
+            android:inputType="text|textMultiLine"
+            android:maxLines="10"
+            android:padding="5dp"
+            android:scrollHorizontally="false"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+</ScrollView>

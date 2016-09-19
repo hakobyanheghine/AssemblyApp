@@ -1,0 +1,60 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <!-- <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item> -->
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabTextStyle</item>
+        <item name="android:actionBarWidgetTheme">@style/MyActionBarWidget</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <!-- <item name="actionBarTabStyle">@style/MyActionBarTabs</item> -->
+        <item name="actionBarTabTextStyle">@style/MyActionBarTabTextStyle</item>
+        <item name="actionBarWidgetTheme">@style/MyActionBarWidget</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:background">@color/light_blue</item>
+        <item name="android:logo">@drawable/ic_action_logo</item>
+        <item name="android:icon">@drawable/ic_action_logo</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="background">@color/light_blue</item>
+        <item name="logo">@drawable/ic_action_logo</item>
+        <item name="icon">@drawable/ic_action_logo</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--
+    <style name="MyActionBarTabs" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+        <item name="android:divider">@null</item>
+    </style>
+    -->
+    <!-- action bar tab text -->
+    <style name="MyActionBarTabTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MyActionBarWidget" parent="@android:style/Theme.Holo">
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+    
+</resources>

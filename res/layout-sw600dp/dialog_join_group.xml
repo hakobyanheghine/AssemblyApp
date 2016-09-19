@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/join_group_code_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/join_group_code"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/join_group_desc_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/join_group_desc"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/join_group_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_background_rounded_corner"
+        android:hint="@string/send_message_hint"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:padding="10dp" />
+
+</LinearLayout>

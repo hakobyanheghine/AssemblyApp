@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/group_description_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_background_big"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/group_img"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/no_img" />
+
+        <LinearLayout
+            android:id="@+id/group_data_container"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_toRightOf="@id/group_img"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/group_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/connection_name_example"
+                android:textColor="@color/grey_3"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/group_description_txt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text="@string/group_description_example"
+                android:textColor="@color/grey_3"
+                android:textSize="25sp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/group_connect_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/group_members_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/members_button_selected_background"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/members"
+            android:textColor="@color/grey_3"
+            android:textSize="29sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/group_messages_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/members_button_unselected_background"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/messages"
+            android:textColor="@color/grey_3"
+            android:textSize="29sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/group_search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/container_background_big"
+        android:drawableLeft="@drawable/ic_action_search"
+        android:drawablePadding="7dp"
+        android:hint="@string/group_search_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences"
+        android:padding="15dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/group_no_results_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/no_search_results"
+        android:textColor="@color/grey_3"
+        android:textSize="25sp"
+        android:typeface="sans"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/group_new_conversation_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:text="@string/post_message"
+        android:textColor="@color/light_blue"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/group_members_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white" />
+
+</LinearLayout>

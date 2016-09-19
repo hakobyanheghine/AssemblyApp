@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Assembly</string>
+    <string name="app_desc">Take your network with you</string>
+    <string name="loading">Loading ...</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="action_messages">Messages</string>
+    <string name="action_search">Search</string>
+    
+    <string name="connections_functionality">Connections Functionality</string>
+	<string name="login_with_linkedin">Login with Linkedin</string>
+   
+    <string name="tab_suggestions">Suggestions</string>
+    <string name="tab_connections">Connections</string>
+    <string name="tab_groups">Groups</string>
+	
+    <string name="connection_name_example">Alexander Soghomonyan</string>
+    <string name="connection_position_example">Junior Software Engineer at  Monitid and Architecture Development at Heroes Inc</string>
+    <string name="connection_company_example">Cambridge, United Kingdom</string>
+    <string name="connection_location_example">120000 km</string>
+    <string name="connection_friend_count_example">15</string>
+    <string name="connection_group_count_example">34</string>
+    <string name="position_dates_example">May 2012 - September 2013</string>
+    <string name="position_location_example">Yerevan, Armenia</string>
+    <string name="messages_date_example">17.10.2014</string>
+    
+    <string name="post_message">Post message</string>
+    <string name="message_subject">Message Subject</string>
+    <string name="message_subject_hint">Enter conversation topic</string>
+    
+    <string name="join_group">Join Group</string>
+    <string name="join">Join</string>
+    <string name="cancel">Cancel</string>
+    <string name="join_group_success">Successfully joined group!</string>
+    <string name="join_group_failure">Couldn\'t join group. Please, try again!</string>
+    <string name="join_group_code_not_valid">Please enter a valid code!</string>
+    <string name="join_group_code">Group Code</string>
+    <string name="join_group_desc">Please enter a valid invitation code to join  a group</string>
+    
+    <string name="message">Message</string>
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="requested">Requested</string>
+    
+    <string name="friends_in_common">Connections In Common</string>
+    <string name="groups_in_common">Groups In Common</string>
+	<string name="friend_in_common">Connection In Common</string>
+    <string name="group_in_common">Group In Common</string>    
+    
+    <string name="change">Change</string>
+    <string name="logout">Logout</string>
+    <string name="submit">Submit</string>
+    <string name="ok">OK</string>
+    
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    
+    <string name="about_me">About Me</string>
+    <string name="my_profile">My Profile</string>
+    <string name="almost_there">Almost there</string>
+    <string name="almost_there_description">Please include at least 6 tags so that we can recommmend the right people</string>
+    
+    <string name="experience">Experience</string>
+    <string name="education">Education</string>
+    <string name="interests">Interests</string>
+    
+    <string name="experience_description">Please list your professional experience, including positions, employers and industry</string>
+    <string name="education_description">Please list your educational achievements, including degrees attained and Universities</string>
+    <string name="interests_description">Please list your interests and expertise</string>
+    
+    <string name="experience_hashtags_example">#strategy #corporate.development #tesla #automotive</string>
+    <string name="education_hashtags_example">#economics #trade #cambridge.university #PhD</string>
+    <string name="interest_hashtags_example">#mobile.marketer #UI.designer #tennis #hiking</string>
+    
+    <string name="about_me_example">In publishing and graphic design, lorem ipsum is a filler text commonly used to demonstrate the graphic elements of a document or visual presentation. Replacing meaningful content that could be distracting with placeholder text may allow viewers to focus on graphic aspects such as font, typography, and page layout. It also reduces the need for the designer to come up with meaningful text, as they can instead use hastily generated lorem ipsum text.</string>
+    <string name="group_description_example">In general the point attack ind uces department of managment. Pricing and marketplace has pointed out the same.</string>
+    
+	<string name="messages">Messages</string>
+	<string name="members">Members</string>
+	
+	<string name="settings">Settings</string>
+	<string name="profile">Profile</string>
+	
+	<string name="my_preferences">My Preferences</string>
+	<string name="kilometers">Kilometers</string>
+	<string name="miles">Miles</string>
+	<string name="edit">Edit</string>
+	<string name="logout_confirmation">Are you sure you want to logout of Assembly?</string>
+	<string name="feedback_title">Please, tell us your opinion!</string>
+	<string name="feedback_thank_you">Thank you for your feedback!</string>
+	<string name="feedback_enter_text">Please, leave your feedback.</string>
+	
+	<string name="visibility_in_suggestions">Visibility in Suggestions</string>
+	<string name="visibility_in_connections">Visibility in Connections</string>
+	
+	<string name="present">Present</string>
+	<string name="chat_message_date_example">10:30</string>
+	
+	<string name="smt_wrong_linkedin">Something went wrong with LinkedIn.</string>
+	<string name="no_internet">Please, check your Internet connecton.</string>
+	
+	<string name="send_message_hint">Type here</string>
+	<string name="search_hint">Search</string>
+	<string name="group_search_hint">Enter text here...</string>
+	<string name="registration_hashtags_hint">#boss</string>
+	<string name="hashtags_example">#boss #development #ui_design #management #training</string>
+	
+	<string name="load_more_messages">Load more messages</string>
+	
+	<string name="enable_gps">Please enable GPS to be able to use Assembly!</string>
+	<string name="enagble">Enable</string>
+	
+	<string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    
+    <string name="no_visibility_in_suggestions">Visibility in suggestions is currently turned off. Please turn it on from the settings.</string>
+    
+    <string name="no_search_results">Your search returned no results</string>
+    
+    <string name="device_type">phone</string>
+	
+</resources>

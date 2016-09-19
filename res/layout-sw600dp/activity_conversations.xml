@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/conversations_search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/container_background"
+        android:drawableLeft="@drawable/ic_action_search"
+        android:drawablePadding="5dp"
+        android:hint="@string/group_search_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences"
+        android:padding="10dp"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/conversations_no_results_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/no_search_results"
+        android:textColor="@color/grey_3"
+        android:textSize="19sp"
+        android:typeface="sans"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/messages_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white" />
+
+</LinearLayout>

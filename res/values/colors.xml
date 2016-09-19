@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="light_grey">#f1f2f6</color>
+    <color name="light_blue">#4797d4</color>
+    <color name="light_blue_1">#c4e6ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_1">#111111</color>
+    <color name="drawer_item_grey">#666666</color>
+    <color name="grey_1">#C7C7C7</color>
+    <color name="grey_1_transparent">#4DC7C7C7</color>
+    <color name="grey_2">#636363</color>
+    <color name="grey_3">#3c4245</color>
+    <color name="grey_4">#acafb0</color>
+    <color name="grey_5">#d8e0e6</color>
+    <color name="grey_6">#edf0f2</color>
+    <color name="red">#ff0000</color>
+    <color name="white_1">#fbfdfc</color>
+
+</resources>
